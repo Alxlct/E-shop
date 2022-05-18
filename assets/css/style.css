@@ -8,6 +8,14 @@
 
 .imgSize {
     width: auto;
-    height: 8vh;
+    height: 5vh;
     color: white;
+}
+.rs {
+    width: 3rem;
+    height: auto;
+}
+.sizeImg {
+    width: 100%;
+    height: auto;
 }

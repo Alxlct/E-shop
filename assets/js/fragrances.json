@@ -7,7 +7,8 @@
             "Gender": "Femme",
             "Type": "Parfum",
             "Picture": "CocoChanel",
-            "Price": "175" 
+            "Price": "175",
+            "Notes": ""
         },
         {
             "Ref": "002",
@@ -52,7 +53,7 @@
             "Gender": "Femme",
             "Type": "Eau de Parfum",
             "Picture": "TFNoir",
-            "Price": "175€" 
+            "Price": "175" 
         },
         {
             "Ref": "101",
@@ -119,7 +120,7 @@
         },
         {
             "Ref": "202",
-            "Brand": "Maison Francis Kurkdjian",
+            "Brand": "MFK",
             "Name": "Grand Soir",
             "Gender": "Unisexe",
             "Type": "Eau de Parfum",
