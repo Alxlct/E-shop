@@ -28,10 +28,11 @@
 @media only screen and (max-width: 440px){
     .sizeImg {
         width: 100%;
-        height: auto;
+        height: 76.2vh;
+        object-fit: contain;
     } 
     .Size {
-        height: 50vh;
+        height: auto;
     } 
 }
     
