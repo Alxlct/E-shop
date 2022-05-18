@@ -16,6 +16,22 @@
     height: auto;
 }
 .sizeImg {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
+.Size {
+    height: 88vh;
+    background-color: #f6ced2;
+    text-align: center;
+
+}
+@media only screen and (max-width: 440px){
+    .sizeImg {
+        width: 100%;
+        height: auto;
+    } 
+    .Size {
+        height: 50vh;
+    } 
+}
+    
