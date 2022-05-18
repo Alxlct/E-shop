@@ -1,6 +1,5 @@
 {
-    "results": [
-        {
+    "results": [{
             "Ref": "001",
             "Brand": "Chanel",
             "Name": "Coco Chanel",
@@ -8,7 +7,7 @@
             "Type": "Parfum",
             "Picture": "CocoChanel",
             "Price": "175",
-            "Notes": ""
+            "Notes": "Coco Parfum de Chanel est un parfum Ambre Floral pour femme. Les notes de tête sont Rose de Bulgarie, Coriandre, Pêche, Jasmin et Mandarine; les notes de coeur sont Rose, Clou de girofle, Mimosa, Fleur d'oranger et Trèfle; les notes de fond sont Ambre, Opoponax, Civette, Bois de santal, Ciste, Vanille et Fève de tonka."
         },
         {
             "Ref": "002",
@@ -17,7 +16,8 @@
             "Gender": "Femme",
             "Type": "Eau de Parfum",
             "Picture": "Coromandel",
-            "Price": "185" 
+            "Price": "185",
+            "Notes": "Coromandel Eau de Parfum de Chanel est un parfum Ambre boisé pour homme et femme. Les notes de tête sont Bigarade, Agrumes et Néroli; les notes de coeur sont Patchouli, Racine d'iris, Rose et Jasmin; les notes de fond sont Chocolat blanc, Benjoin, Ambre, Résine oliban, Encens, Notes boisées et Musc."
         },
         {
             "Ref": "003",
@@ -26,7 +26,8 @@
             "Gender": "Femme",
             "Type": "Eau de Parfum",
             "Picture": "HeureBleue",
-            "Price": "75" 
+            "Price": "75",
+            "Notes": "L'Heure Bleue Eau de Parfum de Guerlain est un parfum Ambre Floral pour femme. Les notes de tête sont Anis, Néroli, Coriandre, Bergamote et Citron; les notes de coeur sont Héliotrope, Œillet, Violette, Clou de girofle, Néroli, Ylang-ylang, Rose de Bulgarie, Jasmin, Orchidée et Tubéreuse; les notes de fond sont Iris, Vanille, Benjoin, Bois de santal, Fève de tonka, Musc et Vétiver."
         },
         {
             "Ref": "004",
@@ -35,7 +36,8 @@
             "Gender": "Femme",
             "Type": "Parfum",
             "Picture": "Must",
-            "Price": "145" 
+            "Price": "145",
+            "Notes":"Must de Cartier de Cartier est un parfum Ambre pour femme. Les notes de tête sont Férule gommeuse, Palissandre du Brésil, Aldéhydes, Bergamote, Citron, Mandarine verte, Pêche et Ananas; les notes de coeur sont Cuir, Œillet, Vétiver, Racine d'iris, Musc, Ylang-ylang, Narcisse jaune, Néroli, Rose, Jasmin et Orchidée; les notes de fond sont Ambre, Vanille, Bois de santal, Fève de tonka, Civette et Vétiver."
         },
         {
             "Ref": "005",
@@ -44,7 +46,8 @@
             "Gender": "Femme",
             "Type": "Eau de Toilette",
             "Picture": "Poison",
-            "Price": "90" 
+            "Price": "90",
+            "Notes":"Poison de Dior est un parfum Ambre Floral pour femme. Les notes de tête sont Prune, Baies sauvages, Coriandre, Anis et Palissandre du Brésil; les notes de coeur sont Tubéreuse, Encens, Miel blanc, Cannelle, Opoponax, Œillet, Jasmin, Fleur d'oranger d'Afrique et Rose; les notes de fond sont Vanille, Ambre, Bois de santal, Musc, Héliotrope, Vétiver et Cèdre de Virginie."
         },
         {
             "Ref": "006",
@@ -53,7 +56,8 @@
             "Gender": "Femme",
             "Type": "Eau de Parfum",
             "Picture": "TFNoir",
-            "Price": "175" 
+            "Price": "175",
+            "Notes": "Noir Pour Femme de Tom Ford est un parfum Ambre Floral pour femme. Les notes de tête sont Gingembre, Bigarade, Mandarine et Bergamote; les notes de coeur sont Kulfi, Rose, Jasmin et Fleur d'oranger; les notes de fond sont Vanille, Ambre, Bois de santal et Lentisque."
         },
         {
             "Ref": "101",
@@ -62,7 +66,9 @@
             "Gender": "Homme",
             "Type": "Eau de Parfum",
             "Picture": "Aventus",
-            "Price": "325" 
+            "Price": "325",
+            "Notes":"Aventus de Creed est un parfum Chypré Fruité pour homme. Aventus a été créé par Jean-Christophe Herault et Erwin Creed. Les notes de tête sont Ananas, Bergamote, Cassis et Pomme; les notes de coeur sont Bouleau, Patchouli, Jasmin du Maroc et Rose; les notes de fond sont Musc, Mousse de chêne, Ambre gris et Vanille."
+            
         },
         {
             "Ref": "102",
@@ -71,7 +77,8 @@
             "Gender": "Homme",
             "Type": "Eau de Parfum",
             "Picture": "DiorHommeIntense",
-            "Price": "85" 
+            "Price": "85",
+            "Notes":"Dior Homme Intense 2011 de Dior est un parfum Boisé Floral Musqué pour homme. La note de tête est Lavande; les notes de coeur sont Iris, Ambrette et Poire; les notes de fond sont Cèdre de Virginie et Vétiver."
         },
         {
             "Ref": "103",
@@ -80,7 +87,8 @@
             "Gender": "Homme",
             "Type": "Eau de Parfum",
             "Picture": "Imagination",
-            "Price": "225" 
+            "Price": "225",
+            "Notes":"Imagination de Louis Vuitton est un parfum Hespéridé aromatique pour homme. Les notes de tête sont Cédrat, Bergamote de Calabria et Orange de Sicile; les notes de coeur sont Gingembre du Nigeria, Néroli de Tunisie et Cannelle Ceylan; les notes de fond sont Thé noir chinois, Ambroxan, Gaïac et Résine oliban."
         },
         {
             "Ref": "104",
@@ -89,7 +97,8 @@
             "Gender": "Homme",
             "Type": "Eau de Parfum",
             "Picture": "Layton",
-            "Price": "190" 
+            "Price": "190",
+            "Notes":""
         },
         {
             "Ref": "105",
@@ -98,7 +107,8 @@
             "Gender": "Homme",
             "Type": "Eau de Parfum",
             "Picture": "Reflection-Man",
-            "Price": "325" 
+            "Price": "325",
+            "Notes":""
         },
         {
             "Ref": "106",
@@ -107,7 +117,8 @@
             "Gender": "Homme",
             "Type": "Eau de Parfum",
             "Picture": "TheOne",
-            "Price": "90" 
+            "Price": "90",
+            "Notes":""
         },
         {
             "Ref": "201",
@@ -116,7 +127,8 @@
             "Gender": "Unisexe",
             "Type": "Parfum",
             "Picture": "AmbreNuit",
-            "Price": "225" 
+            "Price": "225",
+            "Notes":""
         },
         {
             "Ref": "202",
@@ -125,7 +137,8 @@
             "Gender": "Unisexe",
             "Type": "Eau de Parfum",
             "Picture": "GrandSoir",
-            "Price": "160" 
+            "Price": "160",
+            "Notes":""
         },
         {
             "Ref": "203",
@@ -134,7 +147,8 @@
             "Gender": "Unisexe",
             "Type": "Eau de Parfum",
             "Picture": "Herod",
-            "Price": "190" 
+            "Price": "190",
+            "Notes":""
         },
         {
             "Ref": "204",
@@ -143,7 +157,8 @@
             "Gender": "Unisexe",
             "Type": "Eau de Parfum",
             "Picture": "Naxos",
-            "Price": "200" 
+            "Price": "200",
+            "Notes":""
         },
         {
             "Ref": "205",
@@ -152,7 +167,8 @@
             "Gender": "Unisexe",
             "Type": "Eau de Parfum",
             "Picture": "OudWood",
-            "Price": "306" 
+            "Price": "306",
+            "Notes":""
         },
         {
             "Ref": "206",
@@ -161,7 +177,8 @@
             "Gender": "Unisexe",
             "Type": "Eau de Parfum",
             "Picture": "Tuxedo",
-            "Price": "214" 
+            "Price": "214",
+            "Notes":""
         }
     ]
 }
