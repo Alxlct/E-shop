@@ -1,0 +1,166 @@
+{
+    "results": [
+        {
+            "Ref": "001",
+            "Brand": "Chanel",
+            "Name": "Coco Chanel",
+            "Gender": "Femme",
+            "Type": "Parfum",
+            "Picture": "CocoChanel",
+            "Price": "175" 
+        },
+        {
+            "Ref": "002",
+            "Brand": "Chanel",
+            "Name": "Coromandel",
+            "Gender": "Femme",
+            "Type": "Eau de Parfum",
+            "Picture": "Coromandel",
+            "Price": "185" 
+        },
+        {
+            "Ref": "003",
+            "Brand": "Guerlain",
+            "Name": "Heure Bleue",
+            "Gender": "Femme",
+            "Type": "Eau de Parfum",
+            "Picture": "HeureBleue",
+            "Price": "75" 
+        },
+        {
+            "Ref": "004",
+            "Brand": "Cartier",
+            "Name": "Must",
+            "Gender": "Femme",
+            "Type": "Parfum",
+            "Picture": "Must",
+            "Price": "145" 
+        },
+        {
+            "Ref": "005",
+            "Brand": "Dior",
+            "Name": "Poison",
+            "Gender": "Femme",
+            "Type": "Eau de Toilette",
+            "Picture": "Poison",
+            "Price": "90" 
+        },
+        {
+            "Ref": "006",
+            "Brand": "Tom Ford",
+            "Name": "Noir",
+            "Gender": "Femme",
+            "Type": "Eau de Parfum",
+            "Picture": "TFNoir",
+            "Price": "175€" 
+        },
+        {
+            "Ref": "101",
+            "Brand": "Creed",
+            "Name": "Aventus",
+            "Gender": "Homme",
+            "Type": "Eau de Parfum",
+            "Picture": "Aventus",
+            "Price": "325" 
+        },
+        {
+            "Ref": "102",
+            "Brand": "Dior",
+            "Name": "Dior Homme Intense",
+            "Gender": "Homme",
+            "Type": "Eau de Parfum",
+            "Picture": "DiorHommeIntense",
+            "Price": "85" 
+        },
+        {
+            "Ref": "103",
+            "Brand": "Louis Vuitton",
+            "Name": "Imagination",
+            "Gender": "Homme",
+            "Type": "Eau de Parfum",
+            "Picture": "Imagination",
+            "Price": "225" 
+        },
+        {
+            "Ref": "104",
+            "Brand": "Parfums De Marly",
+            "Name": "Layton",
+            "Gender": "Homme",
+            "Type": "Eau de Parfum",
+            "Picture": "Layton",
+            "Price": "190" 
+        },
+        {
+            "Ref": "105",
+            "Brand": "Amouage",
+            "Name": "Reflection",
+            "Gender": "Homme",
+            "Type": "Eau de Parfum",
+            "Picture": "Reflection-Man",
+            "Price": "325" 
+        },
+        {
+            "Ref": "106",
+            "Brand": "Dolce & Gabbana",
+            "Name": "The One",
+            "Gender": "Homme",
+            "Type": "Eau de Parfum",
+            "Picture": "TheOne",
+            "Price": "90" 
+        },
+        {
+            "Ref": "201",
+            "Brand": "Dior",
+            "Name": "Ambre Nuit",
+            "Gender": "Unisexe",
+            "Type": "Parfum",
+            "Picture": "AmbreNuit",
+            "Price": "225" 
+        },
+        {
+            "Ref": "202",
+            "Brand": "Maison Francis Kurkdjian",
+            "Name": "Grand Soir",
+            "Gender": "Unisexe",
+            "Type": "Eau de Parfum",
+            "Picture": "GrandSoir",
+            "Price": "160" 
+        },
+        {
+            "Ref": "203",
+            "Brand": "Parfums de Marly",
+            "Name": "Herod",
+            "Gender": "Unisexe",
+            "Type": "Eau de Parfum",
+            "Picture": "Herod",
+            "Price": "190" 
+        },
+        {
+            "Ref": "204",
+            "Brand": "Xerjoff",
+            "Name": "Naxos",
+            "Gender": "Unisex",
+            "Type": "Eau de Parfum",
+            "Picture": "Naxos",
+            "Price": "200" 
+        },
+        {
+            "Ref": "205",
+            "Brand": "Tom Ford",
+            "Name": "Oud Wood",
+            "Gender": "Unisex",
+            "Type": "Eau de Parfum",
+            "Picture": "OudWood",
+            "Price": "306" 
+        },
+        {
+            "Ref": "206",
+            "Brand": "Yves Saint Laurent",
+            "Name": "Tuxedo",
+            "Gender": "Unisexe",
+            "Type": "Eau de Parfum",
+            "Picture": "Tuxedo",
+            "Price": "214" 
+        }
+    ]
+}
