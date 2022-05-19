@@ -10,7 +10,12 @@ fetch('assets/js/fragrances.json')
         })
     })
 
-function createCard(picture, brand, name, type, price, notes, ref) {
+function enableToolTips() {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+}
+
+function createCard(picture, brand, name, type, price, ref, notes) {
 
     fragrances.style.display = 'flex'
 
@@ -27,31 +32,31 @@ function createCard(picture, brand, name, type, price, notes, ref) {
                 <h2 class="card-text my-0 fs-5">${name}</h2>
                 <p class="card-text my-1">${type}</p>
                 <p class="card-text mt-2 mb-1">${price}€</p>
-                <div><button type="button" class="btn rose mb-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">
-                Description
-              </button></div>
-                <a href="#" class="btn peri text-light mt-1 mb-5">Ajouter au panier</a>
+                <div><button type="button" class="btn rose mb-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">Description</button></div>
+                <button id="REF${ref}"class="btn peri text-light mt-1 mb-5" onclick="addParfumPanier('${picture},${ref},${name},${price},1')">Ajouter au panier</button>
             </div>
         </div>
         <div class="modal fade" id="description-${ref}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header justify-content-center">
-        <h5 class="modal-title" id="exampleModalLabel">${name}</h5>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title" id="exampleModalLabel">${name}</h5>
+            </div>
+            <div class="modal-body">
+              ${notes}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn rose" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ${notes}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn rose" data-bs-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
         `
+    enableToolTips()
 }
 
-function displayFragrancesByGender () {
+
+function displayFragrancesByGender() {
 
     const navLinks = document.querySelectorAll('.nav-link');
     const homepageImg = document.querySelector('#fdm');
@@ -67,10 +72,10 @@ function displayFragrancesByGender () {
             filteredArrayDatas = dataArray.filter(data => data.Gender === gender);
 
             filteredArrayDatas.forEach(filteredData => {
-                if(filteredData.Gender === 'Femme' || filteredData.Gender === 'Unisexe' || filteredData.Gender === 'Homme') {
+                if(filteredData.Gender === 'Femme' || filteredData.Gender === 'Unisexe' || filteredData.Gender === 'Homme'){
                     homepageImg.style.display = 'none';
                 }
-                createCard(filteredData.Picture, filteredData.Brand, filteredData.Name, filteredData.Type, filteredData.Price, filteredData.Notes, filteredData.Ref);
+                createCard(filteredData.Picture, filteredData.Brand, filteredData.Name, filteredData.Type, filteredData.Price, filteredData.Ref, filteredData.Notes);
             })
         })
     })
@@ -79,10 +84,55 @@ function displayFragrancesByGender () {
         fragrances.innerHTML = '';
         homepageImg.style.display = 'block';
         fragrances.style.display = 'none'
-
     })
-
 
 }
 
 displayFragrancesByGender();
+
+// Tableau contenant les references presentes dans mon panier 
+let panier = []
+
+
+function pushPanier(ref) {
+    panier.push(ref)
+}
+
+
+function addParfumPanier(detailsParfum) {
+    let detailsParfumTableau = detailsParfum.split(',')
+    let cartTablebody = document.getElementById('cart-tablebody')
+    if (panier.indexOf(detailsParfumTableau[1]) < 0) {
+        cartTablebody.innerHTML +=
+            `
+        <tr class="align-middle text-center">
+        <td><img class="foto" src="assets/img/${detailsParfumTableau[0]}.webp" alt="${detailsParfumTableau[0]}"></td>
+        <td>ref${detailsParfumTableau[1]}</td>
+        <td>${detailsParfumTableau[2]}</td>
+        <td id="pu${detailsParfumTableau[1]}">${detailsParfumTableau[3]}</td>
+        <td id="qteId${detailsParfumTableau[1]}">${detailsParfumTableau[4]}</td>
+        <td id="st${detailsParfumTableau[1]}"></td>
+        </tr>
+        `
+        pushPanier(detailsParfumTableau[1])
+        showSousTotal(detailsParfumTableau[1])
+    } else {
+        let qteId = document.getElementById(`qteId${detailsParfumTableau[1]}`)
+        let oldValue = qteId.innerText
+        let newValue = Number(oldValue) + 1
+        qteId.innerHTML = newValue
+        showSousTotal(detailsParfumTableau[1])
+
+    }
+}
+
+function showSousTotal(ref) {
+    let qteId = document.getElementById('qteId' + ref)
+    let st = document.getElementById('st' + ref)
+    let pu = document.getElementById('pu' + ref)
+    let result = Number(qteId.innerText) * Number(pu.innerText)
+    console.log(result)
+    st.innerHTML = result
+    console.log(st)
+}
+
