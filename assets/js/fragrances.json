@@ -98,7 +98,7 @@
             "Type": "Eau de Parfum",
             "Picture": "Layton",
             "Price": "190",
-            "Notes":""
+            "Notes":"Layton de Parfums de Marly est un parfum Ambre Floral pour homme et femme. Les notes de tête sont Pomme, Lavande, Mandarine et Bergamote; les notes de coeur sont Géranium, Violette et Jasmin; les notes de fond sont Vanille, Cardamome, Bois de santal, Poivre, Patchouli et Gaïac."
         },
         {
             "Ref": "105",
@@ -108,7 +108,7 @@
             "Type": "Eau de Parfum",
             "Picture": "Reflection-Man",
             "Price": "325",
-            "Notes":""
+            "Notes":"Reflection Man de Amouage est un parfum Boisé Floral Musqué pour homme. Les notes de tête sont Romarin, Poivre rose et Petit-grain; les notes de coeur sont Jasmin, Néroli, Racine d'iris et Ylang-ylang; les notes de fond sont Bois de santal, Vétiver, Cèdre et Patchouli."
         },
         {
             "Ref": "106",
@@ -118,7 +118,7 @@
             "Type": "Eau de Parfum",
             "Picture": "TheOne",
             "Price": "90",
-            "Notes":""
+            "Notes":"The One for Men Eau de Parfum de Dolce&Gabbana est un parfum Boisé Épicé pour homme. Les notes de tête sont Pamplemousse, Coriandre et Basilic; les notes de coeur sont Gingembre, Cardamome et Fleur d'oranger; les notes de fond sont Ambre, Tabac et Cèdre."
         },
         {
             "Ref": "201",
@@ -128,7 +128,7 @@
             "Type": "Parfum",
             "Picture": "AmbreNuit",
             "Price": "225",
-            "Notes":""
+            "Notes":"Ambre Nuit de Dior est un parfum Ambre pour femme. Ambre Nuit a été lancé en 2009. Les notes de tête sont Bergamote et Pamplemousse; les notes de coeur sont Rose de Damas et Poivre rose; les notes de fond sont Ambre gris, Gaïac, Cèdre et Patchouli."
         },
         {
             "Ref": "202",
@@ -138,7 +138,7 @@
             "Type": "Eau de Parfum",
             "Picture": "GrandSoir",
             "Price": "160",
-            "Notes":""
+            "Notes":"Grand Soir de Maison Francis Kurkdjian est un parfum Ambre pour homme et femme. Les notes de tête sont labdanum d'Espagne; les notes de coeur sont benjoin du Siam; les notes de fond sont la fève tonka du Brésil et l'ambre."
         },
         {
             "Ref": "203",
@@ -148,7 +148,7 @@
             "Type": "Eau de Parfum",
             "Picture": "Herod",
             "Price": "190",
-            "Notes":""
+            "Notes":"Herod de Parfums de Marly est un parfum Boisé Épicé pour homme. Les notes de tête sont Cannelle et Poivre; les notes de coeur sont Feuille de tabac, Encens, Osmanthus et Ciste; les notes de fond sont Vanille, Iso E Super, Musc, Cèdre, Huile essentielle de cypriol et Vétiver."
         },
         {
             "Ref": "204",
@@ -158,7 +158,7 @@
             "Type": "Eau de Parfum",
             "Picture": "Naxos",
             "Price": "200",
-            "Notes":""
+            "Notes":"XJ 1861 Naxos de Xerjoff est un parfum Aromatique Épicé pour homme et femme. XJ 1861 Naxos a été lancé en 2015. Les notes de tête sont Lavande, Bergamote et Citron; les notes de coeur sont Miel, Cannelle, Bois de cachemire et Jasmin Sambac; les notes de fond sont Feuille de tabac, Fève de tonka et Vanille."
         },
         {
             "Ref": "205",
@@ -168,7 +168,7 @@
             "Type": "Eau de Parfum",
             "Picture": "OudWood",
             "Price": "306",
-            "Notes":""
+            "Notes":"Oud Wood de Tom Ford est un parfum Ambre boisé pour homme et femme. Les notes de tête sont Poivre, Baie Rose et Cardamome; les notes de coeur sont Bois de Oud, Vétiver; les notes de fond sont Vanille et Ambre."
         },
         {
             "Ref": "206",
@@ -178,7 +178,7 @@
             "Type": "Eau de Parfum",
             "Picture": "Tuxedo",
             "Price": "214",
-            "Notes":""
+            "Notes":"Tuxedo de Yves Saint Laurent est un parfum Chypré pour homme et femme. Les notes de tête sont Feuille de violette, Coriandre et Bergamote; les notes de coeur sont Rose, Poivre noir et Muguet; les notes de fond sont Ambre gris, Patchouli et Vanille bourbon."
         }
     ]
 }

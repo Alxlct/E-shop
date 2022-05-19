@@ -10,7 +10,7 @@ fetch('assets/js/fragrances.json')
         })
     })
 
-function createCard(picture, brand, name, type, price) {
+function createCard(picture, brand, name, type, price, notes, ref) {
 
     fragrances.style.display = 'flex'
 
@@ -27,9 +27,27 @@ function createCard(picture, brand, name, type, price) {
                 <h2 class="card-text my-0 fs-5">${name}</h2>
                 <p class="card-text my-1">${type}</p>
                 <p class="card-text mt-2 mb-1">${price}€</p>
+                <div><button type="button" class="btn rose mb-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">
+                Description
+              </button></div>
                 <a href="#" class="btn peri text-light mt-1 mb-5">Ajouter au panier</a>
             </div>
         </div>
+        <div class="modal fade" id="description-${ref}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h5 class="modal-title" id="exampleModalLabel">${name}</h5>
+      </div>
+      <div class="modal-body">
+        ${notes}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn rose" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
         `
 }
 
@@ -49,10 +67,10 @@ function displayFragrancesByGender () {
             filteredArrayDatas = dataArray.filter(data => data.Gender === gender);
 
             filteredArrayDatas.forEach(filteredData => {
-                if(filteredData.Gender === 'Femme' || filteredData.Gender === 'Unisexe') {
+                if(filteredData.Gender === 'Femme' || filteredData.Gender === 'Unisexe' || filteredData.Gender === 'Homme') {
                     homepageImg.style.display = 'none';
                 }
-                createCard(filteredData.Picture, filteredData.Brand, filteredData.Name, filteredData.Type, filteredData.Price);
+                createCard(filteredData.Picture, filteredData.Brand, filteredData.Name, filteredData.Type, filteredData.Price, filteredData.Notes, filteredData.Ref);
             })
         })
     })
