@@ -92,6 +92,7 @@ displayFragrancesByGender();
 
 // Tableau contenant les references presentes dans mon panier 
 let panier = []
+let total = 0 
 
 
 function pushPanier(ref) {
@@ -111,6 +112,7 @@ function addParfumPanier(detailsParfum) {
         <td>${detailsParfumTableau[2]}</td>
         <td id="pu${detailsParfumTableau[1]}">${detailsParfumTableau[3]}</td>
         <td id="qteId${detailsParfumTableau[1]}">${detailsParfumTableau[4]}</td>
+        <td> <button id="addQte${detailsParfumTableau[1]}" onclick="addQte('${detailsParfumTableau[1]}')">+</button></td>
         <td id="st${detailsParfumTableau[1]}"></td>
         </tr>
         `
@@ -131,8 +133,21 @@ function showSousTotal(ref) {
     let st = document.getElementById('st' + ref)
     let pu = document.getElementById('pu' + ref)
     let result = Number(qteId.innerText) * Number(pu.innerText)
-    console.log(result)
+    let tot = document.getElementById('total')
     st.innerHTML = result
-    console.log(st)
+    total += Number(pu.innerText)
+    tot.innerHTML = total
+
 }
 
+function addQte(ref) {
+    let qteId = document.getElementById('qteId' + ref)
+    let st = document.getElementById('st' + ref)
+    let pu = document.getElementById('pu' + ref)
+    let tot = document.getElementById('total')
+    qteId.innerHTML = Number(qteId.innerText)+1
+    let result = Number(qteId.innerText) * Number(pu.innerText)
+    st.innerHTML = result
+    total += Number(pu.innerText)
+    tot.innerHTML = total
+}
