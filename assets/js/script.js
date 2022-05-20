@@ -112,7 +112,7 @@ function addParfumPanier(detailsParfum) {
         <td>${detailsParfumTableau[2]}</td>
         <td id="pu${detailsParfumTableau[1]}">${detailsParfumTableau[3]}</td>
         <td id="qteId${detailsParfumTableau[1]}">${detailsParfumTableau[4]}</td>
-        <td> <button id="addQte${detailsParfumTableau[1]}" onclick="addQte('${detailsParfumTableau[1]}')">+</button></td>
+        <td> <button id="addQte${detailsParfumTableau[1]}" onclick="addQte('${detailsParfumTableau[1]}')">+</button></td><button id="button${detailsParfumTableau[1]}"  class="peri ms-1" onclick="lessQte('${detailsParfumTableau[1]}')">-</button></td>
         <td id="st${detailsParfumTableau[1]}"></td>
         </tr>
         `
