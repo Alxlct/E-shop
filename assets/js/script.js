@@ -28,12 +28,12 @@ function createCard(picture, brand, name, type, price, ref, notes) {
             </div>
 
             <div class="card-body">
-                <p class="card-title my-1 fs-4">${brand}</p>
-                <h2 class="card-text my-0 fs-5">${name}</h2>
+                <p class="card-title fs-5 my-1">${brand}</p>
+                <p class="card-text fs-5 fw-bold my-1">${name}</p>
                 <p class="card-text my-1">${type}</p>
-                <p class="card-text mt-2 mb-1">${price}€</p>
-                <div><button type="button" class="btn rose mb-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">Description</button></div>
-                <button id="REF${ref}"class="btn peri text-light mt-1 mb-5" onclick="addParfumPanier('${picture},${ref},${name},${price},1')">Ajouter au panier</button>
+                <p class="card-text my-1">${price}€</p>
+                <div><button type="button" class="btn rose mt-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">Description</button></div>
+                <div><button type="button" id="REF${ref}"class="btn peri my-2" onclick="addParfumPanier('${picture},${ref},${name},${price},1')">Ajouter au panier</button></div>
             </div>
         </div>
         <div class="modal fade" id="description-${ref}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

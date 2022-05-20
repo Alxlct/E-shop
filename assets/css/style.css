@@ -39,4 +39,11 @@
         height: auto;
     } 
 }
-    
+.peri:hover {
+background-color: #505EA1;
+color: white;
+}    
+.rose:hover {
+    background-color: #f6ced2;
+    color: white;
+}
