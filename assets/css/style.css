@@ -47,3 +47,11 @@ color: white;
     background-color: #f6ced2;
     color: white;
 }
+.foto {
+    height:auto;
+    width: 8rem;
+}
+.cart:hover {
+
+    cursor: pointer;
+}
