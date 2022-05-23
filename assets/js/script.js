@@ -28,12 +28,12 @@ function createCard(picture, brand, name, type, price, ref, notes) {
             </div>
 
             <div class="card-body">
-                <p class="card-title fs-5 my-1">${brand}</p>
-                <p class="card-text fs-5 fw-bold my-1">${name}</p>
+                <p class="card-title my-1 fs-4">${brand}</p>
+                <h2 class="card-text my-0 fs-5">${name}</h2>
                 <p class="card-text my-1">${type}</p>
-                <p class="card-text my-1">${price}€</p>
-                <div><button type="button" class="btn rose mt-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">Description</button></div>
-                <div><button type="button" id="REF${ref}"class="btn peri my-2" onclick="addParfumPanier('${picture},${ref},${name},${price},1')">Ajouter au panier</button></div>
+                <p class="card-text mt-2 mb-1">${price}€</p>
+                <div><button type="button" class="btn rose mb-1" data-bs-toggle="modal" data-bs-target="#description-${ref}">Description</button></div>
+                <button type="button" id="REF${ref}"class="btn peri mt-1 mb-5" onclick="addParfumPanier('${picture},${ref},${name},${price},1')">Ajouter au panier</button>
             </div>
         </div>
         <div class="modal fade" id="description-${ref}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -72,7 +72,7 @@ function displayFragrancesByGender() {
             filteredArrayDatas = dataArray.filter(data => data.Gender === gender);
 
             filteredArrayDatas.forEach(filteredData => {
-                if(filteredData.Gender === 'Femme' || filteredData.Gender === 'Unisexe' || filteredData.Gender === 'Homme'){
+                if (filteredData.Gender === 'Femme' || filteredData.Gender === 'Unisexe' || filteredData.Gender === 'Homme') {
                     homepageImg.style.display = 'none';
                 }
                 createCard(filteredData.Picture, filteredData.Brand, filteredData.Name, filteredData.Type, filteredData.Price, filteredData.Ref, filteredData.Notes);
@@ -92,7 +92,7 @@ displayFragrancesByGender();
 
 // Tableau contenant les references presentes dans mon panier 
 let panier = []
-let total = 0 
+let total = 0
 
 
 function pushPanier(ref) {
@@ -112,7 +112,7 @@ function addParfumPanier(detailsParfum) {
         <td>${detailsParfumTableau[2]}</td>
         <td id="pu${detailsParfumTableau[1]}">${detailsParfumTableau[3]}</td>
         <td id="qteId${detailsParfumTableau[1]}">${detailsParfumTableau[4]}</td>
-        <td> <button id="addQte${detailsParfumTableau[1]}" onclick="addQte('${detailsParfumTableau[1]}')">+</button></td><button id="button${detailsParfumTableau[1]}"  class="peri ms-1" onclick="lessQte('${detailsParfumTableau[1]}')">-</button></td>
+        <td> <button class="peri" id="addQte${detailsParfumTableau[1]}" onclick="addQte('${detailsParfumTableau[1]}')">+</button><button id="button${detailsParfumTableau[1]}"  class="peri ms-1" onclick="lessQte('${detailsParfumTableau[1]}')">-</button></td>
         <td id="st${detailsParfumTableau[1]}"></td>
         </tr>
         `
@@ -145,9 +145,30 @@ function addQte(ref) {
     let st = document.getElementById('st' + ref)
     let pu = document.getElementById('pu' + ref)
     let tot = document.getElementById('total')
-    qteId.innerHTML = Number(qteId.innerText)+1
+    qteId.innerHTML = Number(qteId.innerText) + 1
     let result = Number(qteId.innerText) * Number(pu.innerText)
+    let button = document.getElementById('button' + ref)
     st.innerHTML = result
     total += Number(pu.innerText)
     tot.innerHTML = total
+    button.disabled = false
 }
+
+function lessQte(ref) {
+    let qteId = document.getElementById('qteId' + ref)
+    let st = document.getElementById('st' + ref)
+    let pu = document.getElementById('pu' + ref)
+    let tot = document.getElementById('total')
+    console.log(qteId.innerText)
+    if(qteId.innerText > 0) {
+        qteId.innerHTML = Number(qteId.innerText) - 1
+        let result = Number(qteId.innerText) * Number(pu.innerText)
+        let button = document.getElementById('button' + ref)
+        st.innerHTML = result
+        total -= Number(pu.innerText)
+        tot.innerHTML = total
+        button.disabled = false
+    }
+    
+
+} 
